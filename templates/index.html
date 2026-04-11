@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Daily Reddit Analysis</h1>
+{% for row in rows %}
+    <h3>{{ row[1] }}</h3>
+    <p style="white-space: pre-wrap">{{ row[2] }}</p>
+      <hr>
+{% endfor %}
+
+
+ <hr>
+<h2 style="color: brown;">LinkedIn Queue</h2>
+ <hr>
+{% for scheduling_row in scheduling_rows %}
+    <p style="white-space: pre-wrap">{{ scheduling_row[1] }}</p>
+    <p style="white-space: pre-wrap">{{ scheduling_row[2] }}</p>
+    <p style="white-space: pre-wrap">{{ scheduling_row[3] }}</p>
+    <p style="white-space: pre-wrap">{{ scheduling_row[4] }}</p>
+    
+      <hr>
+ {% endfor %}
+
+
+</body>
+</html>
